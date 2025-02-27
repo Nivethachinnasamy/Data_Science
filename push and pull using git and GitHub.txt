@@ -1,0 +1,23 @@
+push and pull using git and GitHub
+
+using GitHub :
+new repository -->creating a new repository --> naming the repository --> adding readme file.
+
+file explorer:
+local c --> name/ desktop name/ choose any file
+
+git:
+1) cd Desktop/
+2) git clone (paste)
+(for cloning use <>code in GitHub and copy the link -->HTTPS)
+3) cd nameofrepository/
+(copy some files from local c --> desktop --> datascience(repository name)
+4) git. add
+5) git status
+6) git commit -m "Changes of file added"
+7) entering the email id taking from the above process
+8) entering the username taking from above process
+9)git push
+10) git pull
+
+
