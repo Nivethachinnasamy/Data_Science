@@ -1,0 +1,23 @@
+let window = [];
+const WINDOW_SIZE = 5;
+//opening window
+function updateWindow(newNumbers) {
+    const unique = [...new Set([...window, ...newNumbers])];
+    window = unique.slice(-WINDOW_SIZE);
+    return window;
+}
+//to get into window(to display)
+function getWindow() {
+    return window;
+}
+//calculating average
+function calculateAverage(arr) {
+    if (!arr.length) return 0;
+    return Number((arr.reduce((sum, num) => sum + num, 0) / arr.length).toFixed(2));
+}
+// exporting modules
+module.exports = {
+    updateWindow,
+    getWindow,
+    calculateAverage
+};
